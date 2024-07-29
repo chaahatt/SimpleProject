@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../output.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="flex flex-row justify-between bg-slate-400 p-2">
+        <div>
+            <a href="./Navbar.html">logo</a>
+        </div>
+        <ul class="flex flex-row justify-center gap-3 text-[15px]">
+            <li class="hover:text-white"><a href="#/">Home</a></li>
+            <li class="hover:text-white"><a href="#/">Home</a></li>
+            <li class="hover:text-white"><a href="#/">Home</a></li>
+            <li class="hover:text-white"><a href="#/">Home</a></li>
+        </ul>
+        <div>
+            <button class="bg-[#F4F5F5] px-3 rounded-md  hover:text-white hover:bg-black"><a
+                    href="./SignUp.html">SignUp</a></button>
+            <button class="mx-3 bg-[#F4F5F5] px-3 rounded-md  hover:text-white hover:bg-black"> <a href="./login.html">
+                    login</a></button>
+            < </div>
+    </nav>
+
+    
+    
+    <div class="dataBase flex flex-wrap justify-center items-center rounded-2xl bg-slate-500 p-6">
+
+
+    </div>
+
+    <script>
+        let fruitData = [
+            { image: "../image/yellow-mango-removebg-preview.png", name: 'mango' },
+            { image: "../image/yellow-mango-removebg-preview.png", name: 'mango' },
+            { image: "../image/yellow-mango-removebg-preview.png", name: 'mango' },
+        ]
+
+        let Data = ""
+        fruitData.forEach(value => {
+            console.log(value);
+            Data += `
+            <div class="bg-gray-500 flex flex-col justify-center items-center p-3">
+            <img class="h-[200px]" src="../image/yellow-mango-removebg-preview.png" alt="img">
+            <p>Fun</p>
+            </div>
+    `
+        })
+
+        document.getElementById('dataBase').innerHTML = Data;
+    </script>
+
+
+
+    </div>
+</body>
+
+</html>
+</body>
+
+</html>
